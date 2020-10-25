@@ -1,0 +1,459 @@
+/********** GENERAL**************/
+
+body{
+    margin: 0%;
+    padding: 0%;
+}
+h5 {
+    font-size: 20px;
+    
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 0%;
+    color: blue;
+}
+hr.my-1{
+    width: 10%;
+    border: none;
+    border-bottom: 2px dotted #ccc;
+    height: 2px;
+    margin-top: 0%;
+}
+.top-bar {
+    background: #15161D;
+    text-align: left;
+    margin:0px;
+    padding: 0%;
+}
+ ul.tb{
+    list-style-type: none;
+    display: inline-block;
+}
+ul.tb li{
+
+    display: inline-block;
+}
+ul.tb li a{
+    display: inline-block;
+    padding: 0px 10px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+
+}
+ul.tb li a:hover{
+    color: blue;
+}
+ul.tb li a i{
+    font-size: 14px;
+    color: blue;
+    padding: 5px;
+}
+
+.header {
+    background: #1E1F29;
+    text-align: center;
+    padding: 0%;
+    margin:0px;
+    border-bottom: 4px solid blue;
+}
+/***********CONTANERS**************/
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.container-fluid{
+    padding: 0px;
+    position: relative;
+}
+.container{
+    margin: 0%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+.navbar {
+    position: relative;
+    margin: 0%;
+    padding: 15px;
+    list-style-type: none;
+    background: inherit;
+    border-bottom: 2px solid #bdbdbd;
+}
+
+li.nav-item {
+    display: block;
+     position: relative;
+}
+li.nav-item a {
+    display: block;
+   color: #333;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-variant: small-caps;
+    font-family: 'Times New Roman', Times, serif;
+}
+li.nav-item > a::after{
+    margin:0;
+    content: "";
+    position: absolute;
+    top:90%;
+    right:25%;
+    height: 2px;
+    width: 0%;
+    transition: 0.5s ease-in ;
+    background: blue;
+    visibility:hidden;
+
+}
+li.active >a::after{
+    visibility:visible;
+    width: 50%;
+
+}
+li.nav-item:hover:not(.active) >a::after {
+    visibility: visible ;
+     width: 50%;
+}
+
+.section {
+    padding: 10px;
+    margin: 0 auto 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clear: both;
+}
+.product {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #ccc;    
+    margin-bottom: 90px;
+
+}
+.product img {
+    padding-top: 50px;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+.desc {
+    text-align: center;
+    padding-bottom: 15px;
+}
+.discount {
+    right: 75px;
+    top: 10px;
+}
+.top {
+    position: absolute;
+    border: 2px solid blue;
+    font-size: 14px;
+    font-weight: 200;
+    color: blue;
+    padding: 2px 10px;
+}
+.new {
+    right: 15px;
+    top: 10px;
+    color: white;
+    background: blue;
+}
+.discount {
+    right: 75px;
+    top: 10px;
+}
+
+.add-to-cart {
+    background:#15161D;
+    margin: 0 5%;
+    padding: 10px;
+    position: absolute;
+    bottom: -80px;
+    width: 90%;
+    text-align: center;
+    visibility: hidden;
+}
+.btn-cart {
+background:    #0000ff;
+border:         none;
+border-radius: 11px;
+padding:       20px;
+color:         #ffffff;
+display:       inline-block;
+font:          normal bold 20px/1 "Roboto", sans-serif;
+text-align:    center;
+text-shadow:   0px 0p
+}
+.category {
+    color: #bbbbbb;
+    margin-bottom: 50px;
+    padding: 10px;
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+}
+.product-name {
+    margin: 0px;
+    color: #333;
+}
+.price {
+    color: blue;
+}
+.price>span {
+    color: #bbbbbb;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+hr {
+    width: 90%;
+}
+.product:hover{
+    border:1px solid blue;
+}
+.product:hover>.add-to-cart{
+    visibility: visible;
+}
+.hot-deal {
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 20px;
+    background: url(../img/hotdeal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.time {
+    margin:  30px auto;
+    padding: 25px 10px;
+    font-size: 1.5rem;
+    width: 100px;
+    height:100px;
+    border:1px solid blue;
+    background:blue ;
+    border-radius: 50%;
+    color:white;
+    clear: both;
+    text-align: center;
+    display: block;
+    
+}
+.time:hover{
+    background-color: white;
+    color:blue;
+}
+.hot-time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hot-deal-text {
+    text-align: center;
+}
+.btn-primary{
+    margin-top: 20px;
+    background:white;
+    color: blue;
+    border-color: blue;
+}
+.btn-primary:hover{
+    color:white;
+    background: blue;
+
+}
+.btn-primary:active{
+    background: blue;
+}
+
+
+
+.news-letter{
+    margin: 0%;
+    margin-top: -10px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.social-icons{
+
+    width:100%;
+
+}
+.social-icons i{
+    display: inline-block;
+    font-size: 2rem;
+    padding: 10px;
+    margin: 10px;
+    width: 40px;
+    border: 1px solid #ccc;
+}
+
+.facebook:hover{
+    color:#3b5998;
+    
+}
+.twitter:hover{
+    color:#00acee;
+    
+}
+
+.instagram:hover{
+    color:#8a3ab9 ;
+}
+.google-plus:hover{
+    color: #db4a39 ;
+    
+}
+
+.sub-footer {
+    margin:0px auto;
+    clear: both;
+    width: 100%;
+    position: relative;
+    border-top: 4px solid blue;
+    padding: 20px;
+    background: #15161D;
+    text-align: center;
+}
+.footer-desc{
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+    color: white;
+     width: 45%;
+    }
+
+.pull-right{
+   float: right;
+    text-align: right;
+    color: blue;
+}
+.pull-left{
+    text-align: left;
+    float: left!important;
+    
+}
+.nav-links {
+    display: block;
+    width: 100%;
+    list-style-type: none;
+    
+}
+.items a {
+    display: block;
+    padding: 10px;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px dotted #ccc;
+}
+.items a:hover{
+    color: blue;
+}
+.footer {
+    background:#1E1F29;
+    padding: 20px;
+    padding-bottom: 50px;
+    position: relative;
+    
+}
+@media (min-width:575px){
+    .navbar {
+        position: relative;
+        margin: 0%;
+        padding: 15px;
+        list-style-type: none;
+        background: inherit;
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid #bdbdbd;
+    }
+    li.nav-item {
+        display: inline-block;
+         position: relative;
+    }
+    li.nav-item a {
+        display: inline-block;
+       color: #333;
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        font-variant: small-caps;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    li.nav-item > a::after{
+        margin:0;
+        content: "";
+        position: absolute;
+        bottom:10%;
+        right:5%;
+        height: 2px;
+        width: 0%;
+        transition: 0.5s ease-in ;
+        background: blue;
+        visibility:hidden;
+    
+    }
+    li.active >a::after{
+        visibility:visible;
+        width: 90%;
+    
+    }
+    li.nav-item:hover:not(.active) >a::after {
+        visibility: visible ;
+         width: 90%;
+    }
+    .time {
+        margin: 15px auto;
+        padding: 10px;
+        font-size: 1.5rem;
+        width: 75px;
+        height: 75px;
+        border:1px solid blue;
+        background:white ;
+        border-radius: 50%;
+        color: blue;
+        text-align: center;
+        
+    }
+    .time:hover{
+        color: white;
+        background: blue;
+    }
+    
+
+    
+    
+}
+@media(max-width:500px){
+    .time {
+        margin: 15px auto;
+        padding: 10px;
+        font-size: 1.5rem;
+        width: 75px;
+        height: 75px;
+        border:1px solid blue;
+        background:white ;
+        border-radius: 50%;
+        color: blue;
+        text-align: center;
+        clear: both;
+    }
+    .time:hover{
+        color: white;
+        background: blue;
+    }
+    
+
+
+}
